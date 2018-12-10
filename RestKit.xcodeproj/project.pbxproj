@@ -10,6 +10,15 @@
 		0AA70D5921BF02130093F3A0 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA70D4F21BF02130093F3A0 /* RestKit.framework */; };
 		0AA70D5E21BF02130093F3A0 /* RestKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D5D21BF02130093F3A0 /* RestKitTests.swift */; };
 		0AA70D6021BF02130093F3A0 /* RestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA70D5221BF02130093F3A0 /* RestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AA70D6A21BF05DE0093F3A0 /* Gettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D6921BF05DE0093F3A0 /* Gettable.swift */; };
+		0AA70D6C21BF05F20093F3A0 /* Createable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D6B21BF05F20093F3A0 /* Createable.swift */; };
+		0AA70D6E21BF05FC0093F3A0 /* Updateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D6D21BF05FC0093F3A0 /* Updateable.swift */; };
+		0AA70D7021BF06040093F3A0 /* Deleteable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D6F21BF06040093F3A0 /* Deleteable.swift */; };
+		0AA70D7221BF06900093F3A0 /* EndPointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D7121BF06900093F3A0 /* EndPointType.swift */; };
+		0AA70D7421BF07850093F3A0 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D7321BF07850093F3A0 /* HTTPMethod.swift */; };
+		0AA70D7621BF07AA0093F3A0 /* HTTPTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D7521BF07AA0093F3A0 /* HTTPTask.swift */; };
+		0AA70D7A21BF09BE0093F3A0 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D7921BF09BE0093F3A0 /* ParameterEncoder.swift */; };
+		0AA70D8121BF0A800093F3A0 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D8021BF0A800093F3A0 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +38,15 @@
 		0AA70D5821BF02130093F3A0 /* RestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA70D5D21BF02130093F3A0 /* RestKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestKitTests.swift; sourceTree = "<group>"; };
 		0AA70D5F21BF02130093F3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AA70D6921BF05DE0093F3A0 /* Gettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gettable.swift; sourceTree = "<group>"; };
+		0AA70D6B21BF05F20093F3A0 /* Createable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Createable.swift; sourceTree = "<group>"; };
+		0AA70D6D21BF05FC0093F3A0 /* Updateable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updateable.swift; sourceTree = "<group>"; };
+		0AA70D6F21BF06040093F3A0 /* Deleteable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deleteable.swift; sourceTree = "<group>"; };
+		0AA70D7121BF06900093F3A0 /* EndPointType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointType.swift; sourceTree = "<group>"; };
+		0AA70D7321BF07850093F3A0 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		0AA70D7521BF07AA0093F3A0 /* HTTPTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTask.swift; sourceTree = "<group>"; };
+		0AA70D7921BF09BE0093F3A0 /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
+		0AA70D8021BF0A800093F3A0 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +89,8 @@
 		0AA70D5121BF02130093F3A0 /* RestKit */ = {
 			isa = PBXGroup;
 			children = (
+				0AA70D7B21BF09FC0093F3A0 /* Protocols */,
+				0AA70D7F21BF0A530093F3A0 /* Enums */,
 				0AA70D5221BF02130093F3A0 /* RestKit.h */,
 				0AA70D5321BF02130093F3A0 /* Info.plist */,
 			);
@@ -84,6 +104,53 @@
 				0AA70D5F21BF02130093F3A0 /* Info.plist */,
 			);
 			path = RestKitTests;
+			sourceTree = "<group>";
+		};
+		0AA70D7B21BF09FC0093F3A0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				0AA70D7C21BF0A200093F3A0 /* Encoding */,
+				0AA70D7E21BF0A430093F3A0 /* EndPoint */,
+				0AA70D7D21BF0A2F0093F3A0 /* Service */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		0AA70D7C21BF0A200093F3A0 /* Encoding */ = {
+			isa = PBXGroup;
+			children = (
+				0AA70D7921BF09BE0093F3A0 /* ParameterEncoder.swift */,
+			);
+			path = Encoding;
+			sourceTree = "<group>";
+		};
+		0AA70D7D21BF0A2F0093F3A0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0AA70D8021BF0A800093F3A0 /* Service.swift */,
+				0AA70D6B21BF05F20093F3A0 /* Createable.swift */,
+				0AA70D6D21BF05FC0093F3A0 /* Updateable.swift */,
+				0AA70D6F21BF06040093F3A0 /* Deleteable.swift */,
+				0AA70D6921BF05DE0093F3A0 /* Gettable.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0AA70D7E21BF0A430093F3A0 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				0AA70D7121BF06900093F3A0 /* EndPointType.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		0AA70D7F21BF0A530093F3A0 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				0AA70D7321BF07850093F3A0 /* HTTPMethod.swift */,
+				0AA70D7521BF07AA0093F3A0 /* HTTPTask.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +215,7 @@
 				TargetAttributes = {
 					0AA70D4E21BF02130093F3A0 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					0AA70D5721BF02130093F3A0 = {
 						CreatedOnToolsVersion = 10.1;
@@ -194,6 +262,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AA70D7621BF07AA0093F3A0 /* HTTPTask.swift in Sources */,
+				0AA70D6A21BF05DE0093F3A0 /* Gettable.swift in Sources */,
+				0AA70D7A21BF09BE0093F3A0 /* ParameterEncoder.swift in Sources */,
+				0AA70D6E21BF05FC0093F3A0 /* Updateable.swift in Sources */,
+				0AA70D7421BF07850093F3A0 /* HTTPMethod.swift in Sources */,
+				0AA70D8121BF0A800093F3A0 /* Service.swift in Sources */,
+				0AA70D7021BF06040093F3A0 /* Deleteable.swift in Sources */,
+				0AA70D7221BF06900093F3A0 /* EndPointType.swift in Sources */,
+				0AA70D6C21BF05F20093F3A0 /* Createable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +418,7 @@
 		0AA70D6421BF02130093F3A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -358,6 +436,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rodolforoca.RestKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +445,7 @@
 		0AA70D6521BF02130093F3A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -391,6 +471,7 @@
 		0AA70D6721BF02130093F3A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZAS6C52E4S;
 				INFOPLIST_FILE = RestKitTests/Info.plist;
@@ -409,6 +490,7 @@
 		0AA70D6821BF02130093F3A0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZAS6C52E4S;
 				INFOPLIST_FILE = RestKitTests/Info.plist;
