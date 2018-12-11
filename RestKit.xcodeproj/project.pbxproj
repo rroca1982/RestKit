@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AA3BC3921BF3D70000FCC9E /* JSONParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3BC3821BF3D70000FCC9E /* JSONParameterEncoding.swift */; };
+		0AA3BC3B21BF3DE1000FCC9E /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3BC3A21BF3DE1000FCC9E /* URLParameterEncoder.swift */; };
+		0AA3BC3D21BF3E2F000FCC9E /* RestKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3BC3C21BF3E2F000FCC9E /* RestKitError.swift */; };
 		0AA70D5921BF02130093F3A0 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA70D4F21BF02130093F3A0 /* RestKit.framework */; };
 		0AA70D5E21BF02130093F3A0 /* RestKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D5D21BF02130093F3A0 /* RestKitTests.swift */; };
 		0AA70D6021BF02130093F3A0 /* RestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA70D5221BF02130093F3A0 /* RestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AA3BC3821BF3D70000FCC9E /* JSONParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoding.swift; sourceTree = "<group>"; };
+		0AA3BC3A21BF3DE1000FCC9E /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		0AA3BC3C21BF3E2F000FCC9E /* RestKitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestKitError.swift; sourceTree = "<group>"; };
 		0AA70D4F21BF02130093F3A0 /* RestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA70D5221BF02130093F3A0 /* RestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestKit.h; sourceTree = "<group>"; };
 		0AA70D5321BF02130093F3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				0AA70D7921BF09BE0093F3A0 /* ParameterEncoder.swift */,
+				0AA3BC3821BF3D70000FCC9E /* JSONParameterEncoding.swift */,
+				0AA3BC3A21BF3DE1000FCC9E /* URLParameterEncoder.swift */,
 			);
 			path = Encoding;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 		0AA70D7F21BF0A530093F3A0 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				0AA3BC3C21BF3E2F000FCC9E /* RestKitError.swift */,
 				0AA70D7321BF07850093F3A0 /* HTTPMethod.swift */,
 				0AA70D7521BF07AA0093F3A0 /* HTTPTask.swift */,
 			);
@@ -263,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA70D7621BF07AA0093F3A0 /* HTTPTask.swift in Sources */,
+				0AA3BC3B21BF3DE1000FCC9E /* URLParameterEncoder.swift in Sources */,
 				0AA70D6A21BF05DE0093F3A0 /* Gettable.swift in Sources */,
 				0AA70D7A21BF09BE0093F3A0 /* ParameterEncoder.swift in Sources */,
 				0AA70D6E21BF05FC0093F3A0 /* Updateable.swift in Sources */,
@@ -270,6 +280,8 @@
 				0AA70D8121BF0A800093F3A0 /* Service.swift in Sources */,
 				0AA70D7021BF06040093F3A0 /* Deleteable.swift in Sources */,
 				0AA70D7221BF06900093F3A0 /* EndPointType.swift in Sources */,
+				0AA3BC3D21BF3E2F000FCC9E /* RestKitError.swift in Sources */,
+				0AA3BC3921BF3D70000FCC9E /* JSONParameterEncoding.swift in Sources */,
 				0AA70D6C21BF05F20093F3A0 /* Createable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
