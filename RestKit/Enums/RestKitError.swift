@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum RestKitError: Error {
+public enum RestKitError: Error {
     case parametersNil
     case encodingFailed
     case decodingFailed

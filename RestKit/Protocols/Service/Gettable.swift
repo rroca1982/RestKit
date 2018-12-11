@@ -8,4 +8,4 @@
 
 import Foundation
 
-protocol Gettable { }
+public protocol Gettable { }

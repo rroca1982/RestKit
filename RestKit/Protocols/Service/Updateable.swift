@@ -8,4 +8,4 @@
 
 import Foundation
 
-protocol Updateable { }
+public protocol Updateable { }

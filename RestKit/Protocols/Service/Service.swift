@@ -8,6 +8,13 @@
 
 import Foundation
 
-protocol Service {
+public protocol Service {
     associatedtype EndPoint: EndPointType
+}
+
+extension Service {
+    public var manager: NetworkManager<EndPoint> {
+        return NetworkManager<EndPoint>()
+    }
+    
 }

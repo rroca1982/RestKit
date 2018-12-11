@@ -8,4 +8,4 @@
 
 import Foundation
 
-protocol Createable { }
+public protocol Createable { }

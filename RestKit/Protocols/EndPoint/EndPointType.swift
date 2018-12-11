@@ -8,9 +8,9 @@
 
 import Foundation
 
-protocol EndPointType {
-    var apiClientKey: String { get }
-    var apiClientSecret: String { get }
+public protocol EndPointType {
+    var apiClientKey: String? { get }
+    var apiClientSecret: String? { get }
     var baseURL: URL { get }
     var path: String { get }
     var httpMethod: HTTPMethod { get }

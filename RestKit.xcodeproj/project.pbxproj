@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A0259DB21C030BB004E4F8D /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0259DA21C030BB004E4F8D /* Result.swift */; };
+		0A0259DD21C030F6004E4F8D /* NetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0259DC21C030F6004E4F8D /* NetworkDispatcher.swift */; };
+		0A0259DF21C031C0004E4F8D /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0259DE21C031C0004E4F8D /* Dispatcher.swift */; };
+		0A0259E121C0339F004E4F8D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0259E021C0339F004E4F8D /* NetworkManager.swift */; };
 		0AA3BC3921BF3D70000FCC9E /* JSONParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3BC3821BF3D70000FCC9E /* JSONParameterEncoding.swift */; };
 		0AA3BC3B21BF3DE1000FCC9E /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3BC3A21BF3DE1000FCC9E /* URLParameterEncoder.swift */; };
 		0AA3BC3D21BF3E2F000FCC9E /* RestKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3BC3C21BF3E2F000FCC9E /* RestKitError.swift */; };
@@ -35,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A0259DA21C030BB004E4F8D /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		0A0259DC21C030F6004E4F8D /* NetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDispatcher.swift; sourceTree = "<group>"; };
+		0A0259DE21C031C0004E4F8D /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
+		0A0259E021C0339F004E4F8D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0AA3BC3821BF3D70000FCC9E /* JSONParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoding.swift; sourceTree = "<group>"; };
 		0AA3BC3A21BF3DE1000FCC9E /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
 		0AA3BC3C21BF3E2F000FCC9E /* RestKitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestKitError.swift; sourceTree = "<group>"; };
@@ -74,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0259E221C03A21004E4F8D /* Dispatcher */ = {
+			isa = PBXGroup;
+			children = (
+				0A0259DC21C030F6004E4F8D /* NetworkDispatcher.swift */,
+				0A0259DE21C031C0004E4F8D /* Dispatcher.swift */,
+			);
+			path = Dispatcher;
+			sourceTree = "<group>";
+		};
 		0AA70D4521BF02130093F3A0 = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +112,8 @@
 		0AA70D5121BF02130093F3A0 /* RestKit */ = {
 			isa = PBXGroup;
 			children = (
+				0A0259E021C0339F004E4F8D /* NetworkManager.swift */,
+				0A0259E221C03A21004E4F8D /* Dispatcher */,
 				0AA70D7B21BF09FC0093F3A0 /* Protocols */,
 				0AA70D7F21BF0A530093F3A0 /* Enums */,
 				0AA70D5221BF02130093F3A0 /* RestKit.h */,
@@ -155,6 +174,7 @@
 		0AA70D7F21BF0A530093F3A0 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				0A0259DA21C030BB004E4F8D /* Result.swift */,
 				0AA3BC3C21BF3E2F000FCC9E /* RestKitError.swift */,
 				0AA70D7321BF07850093F3A0 /* HTTPMethod.swift */,
 				0AA70D7521BF07AA0093F3A0 /* HTTPTask.swift */,
@@ -272,7 +292,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA70D7621BF07AA0093F3A0 /* HTTPTask.swift in Sources */,
+				0A0259DB21C030BB004E4F8D /* Result.swift in Sources */,
 				0AA3BC3B21BF3DE1000FCC9E /* URLParameterEncoder.swift in Sources */,
+				0A0259DD21C030F6004E4F8D /* NetworkDispatcher.swift in Sources */,
+				0A0259E121C0339F004E4F8D /* NetworkManager.swift in Sources */,
 				0AA70D6A21BF05DE0093F3A0 /* Gettable.swift in Sources */,
 				0AA70D7A21BF09BE0093F3A0 /* ParameterEncoder.swift in Sources */,
 				0AA70D6E21BF05FC0093F3A0 /* Updateable.swift in Sources */,
@@ -283,6 +306,7 @@
 				0AA3BC3D21BF3E2F000FCC9E /* RestKitError.swift in Sources */,
 				0AA3BC3921BF3D70000FCC9E /* JSONParameterEncoding.swift in Sources */,
 				0AA70D6C21BF05F20093F3A0 /* Createable.swift in Sources */,
+				0A0259DF21C031C0004E4F8D /* Dispatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,8 +462,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
 				INFOPLIST_FILE = RestKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,8 +492,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = RestKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
