@@ -1,6 +1,6 @@
 //
 //  NetworkDispatcher.swift
-//  RestKit
+//  SwiftyRestKit
 //
 //  Created by Rodolfo Roca on 12/11/18.
 //  Copyright © 2018 Rodolfo Roca. All rights reserved.

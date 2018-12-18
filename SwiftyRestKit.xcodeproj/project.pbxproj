@@ -13,10 +13,10 @@
 		0A0259E121C0339F004E4F8D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0259E021C0339F004E4F8D /* NetworkManager.swift */; };
 		0AA3BC3921BF3D70000FCC9E /* JSONParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3BC3821BF3D70000FCC9E /* JSONParameterEncoding.swift */; };
 		0AA3BC3B21BF3DE1000FCC9E /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3BC3A21BF3DE1000FCC9E /* URLParameterEncoder.swift */; };
-		0AA3BC3D21BF3E2F000FCC9E /* RestKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3BC3C21BF3E2F000FCC9E /* RestKitError.swift */; };
+		0AA3BC3D21BF3E2F000FCC9E /* SwiftyRestKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3BC3C21BF3E2F000FCC9E /* SwiftyRestKitError.swift */; };
 		0AA70D5921BF02130093F3A0 /* SwiftyRestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA70D4F21BF02130093F3A0 /* SwiftyRestKit.framework */; };
-		0AA70D5E21BF02130093F3A0 /* RestKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D5D21BF02130093F3A0 /* RestKitTests.swift */; };
-		0AA70D6021BF02130093F3A0 /* RestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA70D5221BF02130093F3A0 /* RestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AA70D5E21BF02130093F3A0 /* SwiftyRestKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D5D21BF02130093F3A0 /* SwiftyRestKitTests.swift */; };
+		0AA70D6021BF02130093F3A0 /* SwiftyRestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA70D5221BF02130093F3A0 /* SwiftyRestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA70D6A21BF05DE0093F3A0 /* Gettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D6921BF05DE0093F3A0 /* Gettable.swift */; };
 		0AA70D6C21BF05F20093F3A0 /* Createable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D6B21BF05F20093F3A0 /* Createable.swift */; };
 		0AA70D6E21BF05FC0093F3A0 /* Updateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D6D21BF05FC0093F3A0 /* Updateable.swift */; };
@@ -45,12 +45,12 @@
 		0A0259E021C0339F004E4F8D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		0AA3BC3821BF3D70000FCC9E /* JSONParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoding.swift; sourceTree = "<group>"; };
 		0AA3BC3A21BF3DE1000FCC9E /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
-		0AA3BC3C21BF3E2F000FCC9E /* RestKitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestKitError.swift; sourceTree = "<group>"; };
+		0AA3BC3C21BF3E2F000FCC9E /* SwiftyRestKitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyRestKitError.swift; sourceTree = "<group>"; };
 		0AA70D4F21BF02130093F3A0 /* SwiftyRestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyRestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AA70D5221BF02130093F3A0 /* RestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestKit.h; sourceTree = "<group>"; };
+		0AA70D5221BF02130093F3A0 /* SwiftyRestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyRestKit.h; sourceTree = "<group>"; };
 		0AA70D5321BF02130093F3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA70D5821BF02130093F3A0 /* SwiftyRestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyRestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AA70D5D21BF02130093F3A0 /* RestKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestKitTests.swift; sourceTree = "<group>"; };
+		0AA70D5D21BF02130093F3A0 /* SwiftyRestKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyRestKitTests.swift; sourceTree = "<group>"; };
 		0AA70D5F21BF02130093F3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA70D6921BF05DE0093F3A0 /* Gettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gettable.swift; sourceTree = "<group>"; };
 		0AA70D6B21BF05F20093F3A0 /* Createable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Createable.swift; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 				0A0259E221C03A21004E4F8D /* Dispatcher */,
 				0AA70D7B21BF09FC0093F3A0 /* Protocols */,
 				0AA70D7F21BF0A530093F3A0 /* Enums */,
-				0AA70D5221BF02130093F3A0 /* RestKit.h */,
+				0AA70D5221BF02130093F3A0 /* SwiftyRestKit.h */,
 				0AA70D5321BF02130093F3A0 /* Info.plist */,
 			);
 			path = SwiftyRestKit;
@@ -125,7 +125,7 @@
 		0AA70D5C21BF02130093F3A0 /* SwiftyRestKitTests */ = {
 			isa = PBXGroup;
 			children = (
-				0AA70D5D21BF02130093F3A0 /* RestKitTests.swift */,
+				0AA70D5D21BF02130093F3A0 /* SwiftyRestKitTests.swift */,
 				0AA70D5F21BF02130093F3A0 /* Info.plist */,
 			);
 			path = SwiftyRestKitTests;
@@ -175,7 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				0A0259DA21C030BB004E4F8D /* Result.swift */,
-				0AA3BC3C21BF3E2F000FCC9E /* RestKitError.swift */,
+				0AA3BC3C21BF3E2F000FCC9E /* SwiftyRestKitError.swift */,
 				0AA70D7321BF07850093F3A0 /* HTTPMethod.swift */,
 				0AA70D7521BF07AA0093F3A0 /* HTTPTask.swift */,
 			);
@@ -189,7 +189,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA70D6021BF02130093F3A0 /* RestKit.h in Headers */,
+				0AA70D6021BF02130093F3A0 /* SwiftyRestKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +303,7 @@
 				0AA70D8121BF0A800093F3A0 /* Service.swift in Sources */,
 				0AA70D7021BF06040093F3A0 /* Deleteable.swift in Sources */,
 				0AA70D7221BF06900093F3A0 /* EndPointType.swift in Sources */,
-				0AA3BC3D21BF3E2F000FCC9E /* RestKitError.swift in Sources */,
+				0AA3BC3D21BF3E2F000FCC9E /* SwiftyRestKitError.swift in Sources */,
 				0AA3BC3921BF3D70000FCC9E /* JSONParameterEncoding.swift in Sources */,
 				0AA70D6C21BF05F20093F3A0 /* Createable.swift in Sources */,
 				0A0259DF21C031C0004E4F8D /* Dispatcher.swift in Sources */,
@@ -314,7 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA70D5E21BF02130093F3A0 /* RestKitTests.swift in Sources */,
+				0AA70D5E21BF02130093F3A0 /* SwiftyRestKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,6 +1,6 @@
 //
 //  JSONParameterEncoding.swift
-//  RestKit
+//  SwiftyRestKit
 //
 //  Created by Rodolfo Roca on 12/10/18.
 //  Copyright © 2018 Rodolfo Roca. All rights reserved.
@@ -19,7 +19,7 @@ public struct JSONParameterEncoder: ParameterEncoder {
                 urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
             }
         } catch {
-            throw RestKitError.encodingFailed
+            throw SwiftyRestKitError.encodingFailed
         }
     }
 }

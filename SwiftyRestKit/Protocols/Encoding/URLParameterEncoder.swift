@@ -1,6 +1,6 @@
 //
 //  URLParameterEncoder.swift
-//  RestKit
+//  SwiftyRestKit
 //
 //  Created by Rodolfo Roca on 12/10/18.
 //  Copyright © 2018 Rodolfo Roca. All rights reserved.
@@ -13,7 +13,7 @@ public struct URLParameterEncoder: ParameterEncoder {
     public static func encode(urlRequest: inout URLRequest, with parameters: Parameters) throws {
         
         guard let url = urlRequest.url else {
-            throw RestKitError.missingURL
+            throw SwiftyRestKitError.missingURL
         }
         
         if var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false), !parameters.isEmpty {

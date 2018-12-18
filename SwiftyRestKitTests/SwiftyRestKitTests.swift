@@ -1,15 +1,15 @@
 //
-//  RestKitTests.swift
-//  RestKitTests
+//  SwiftyRestKitTests.swift
+//  SwiftyRestKitTests
 //
 //  Created by Rodolfo Roca on 12/10/18.
 //  Copyright © 2018 Rodolfo Roca. All rights reserved.
 //
 
 import XCTest
-@testable import RestKit
+@testable import SwiftyRestKit
 
-class RestKitTests: XCTestCase {
+class SwiftyRestKitTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
