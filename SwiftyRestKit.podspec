@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/rroca1982/RestKit.git", :tag => "#{s.version}" }
 
-  s.source_files = "/**/*.{swift}"
+  s.source_files = "RestKit/**/*.{swift}"
 
   s.swift_version = "4.2"
 

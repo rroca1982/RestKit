@@ -14,7 +14,7 @@
 		0AA3BC3921BF3D70000FCC9E /* JSONParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3BC3821BF3D70000FCC9E /* JSONParameterEncoding.swift */; };
 		0AA3BC3B21BF3DE1000FCC9E /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3BC3A21BF3DE1000FCC9E /* URLParameterEncoder.swift */; };
 		0AA3BC3D21BF3E2F000FCC9E /* RestKitError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA3BC3C21BF3E2F000FCC9E /* RestKitError.swift */; };
-		0AA70D5921BF02130093F3A0 /* RestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA70D4F21BF02130093F3A0 /* RestKit.framework */; };
+		0AA70D5921BF02130093F3A0 /* SwiftyRestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AA70D4F21BF02130093F3A0 /* SwiftyRestKit.framework */; };
 		0AA70D5E21BF02130093F3A0 /* RestKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D5D21BF02130093F3A0 /* RestKitTests.swift */; };
 		0AA70D6021BF02130093F3A0 /* RestKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AA70D5221BF02130093F3A0 /* RestKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AA70D6A21BF05DE0093F3A0 /* Gettable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA70D6921BF05DE0093F3A0 /* Gettable.swift */; };
@@ -46,10 +46,10 @@
 		0AA3BC3821BF3D70000FCC9E /* JSONParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParameterEncoding.swift; sourceTree = "<group>"; };
 		0AA3BC3A21BF3DE1000FCC9E /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
 		0AA3BC3C21BF3E2F000FCC9E /* RestKitError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestKitError.swift; sourceTree = "<group>"; };
-		0AA70D4F21BF02130093F3A0 /* RestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA70D4F21BF02130093F3A0 /* SwiftyRestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyRestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA70D5221BF02130093F3A0 /* RestKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RestKit.h; sourceTree = "<group>"; };
 		0AA70D5321BF02130093F3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AA70D5821BF02130093F3A0 /* RestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA70D5821BF02130093F3A0 /* SwiftyRestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyRestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA70D5D21BF02130093F3A0 /* RestKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestKitTests.swift; sourceTree = "<group>"; };
 		0AA70D5F21BF02130093F3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA70D6921BF05DE0093F3A0 /* Gettable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gettable.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AA70D5921BF02130093F3A0 /* RestKit.framework in Frameworks */,
+				0AA70D5921BF02130093F3A0 /* SwiftyRestKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +94,8 @@
 		0AA70D4521BF02130093F3A0 = {
 			isa = PBXGroup;
 			children = (
-				0AA70D5121BF02130093F3A0 /* RestKit */,
-				0AA70D5C21BF02130093F3A0 /* RestKitTests */,
+				0AA70D5121BF02130093F3A0 /* SwiftyRestKit */,
+				0AA70D5C21BF02130093F3A0 /* SwiftyRestKitTests */,
 				0AA70D5021BF02130093F3A0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,13 +103,13 @@
 		0AA70D5021BF02130093F3A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0AA70D4F21BF02130093F3A0 /* RestKit.framework */,
-				0AA70D5821BF02130093F3A0 /* RestKitTests.xctest */,
+				0AA70D4F21BF02130093F3A0 /* SwiftyRestKit.framework */,
+				0AA70D5821BF02130093F3A0 /* SwiftyRestKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0AA70D5121BF02130093F3A0 /* RestKit */ = {
+		0AA70D5121BF02130093F3A0 /* SwiftyRestKit */ = {
 			isa = PBXGroup;
 			children = (
 				0A0259E021C0339F004E4F8D /* NetworkManager.swift */,
@@ -119,16 +119,16 @@
 				0AA70D5221BF02130093F3A0 /* RestKit.h */,
 				0AA70D5321BF02130093F3A0 /* Info.plist */,
 			);
-			path = RestKit;
+			path = SwiftyRestKit;
 			sourceTree = "<group>";
 		};
-		0AA70D5C21BF02130093F3A0 /* RestKitTests */ = {
+		0AA70D5C21BF02130093F3A0 /* SwiftyRestKitTests */ = {
 			isa = PBXGroup;
 			children = (
 				0AA70D5D21BF02130093F3A0 /* RestKitTests.swift */,
 				0AA70D5F21BF02130093F3A0 /* Info.plist */,
 			);
-			path = RestKitTests;
+			path = SwiftyRestKitTests;
 			sourceTree = "<group>";
 		};
 		0AA70D7B21BF09FC0093F3A0 /* Protocols */ = {
@@ -196,9 +196,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0AA70D4E21BF02130093F3A0 /* RestKit */ = {
+		0AA70D4E21BF02130093F3A0 /* SwiftyRestKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AA70D6321BF02130093F3A0 /* Build configuration list for PBXNativeTarget "RestKit" */;
+			buildConfigurationList = 0AA70D6321BF02130093F3A0 /* Build configuration list for PBXNativeTarget "SwiftyRestKit" */;
 			buildPhases = (
 				0AA70D4A21BF02130093F3A0 /* Headers */,
 				0AA70D4B21BF02130093F3A0 /* Sources */,
@@ -209,14 +209,14 @@
 			);
 			dependencies = (
 			);
-			name = RestKit;
+			name = SwiftyRestKit;
 			productName = RestKit;
-			productReference = 0AA70D4F21BF02130093F3A0 /* RestKit.framework */;
+			productReference = 0AA70D4F21BF02130093F3A0 /* SwiftyRestKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		0AA70D5721BF02130093F3A0 /* RestKitTests */ = {
+		0AA70D5721BF02130093F3A0 /* SwiftyRestKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AA70D6621BF02130093F3A0 /* Build configuration list for PBXNativeTarget "RestKitTests" */;
+			buildConfigurationList = 0AA70D6621BF02130093F3A0 /* Build configuration list for PBXNativeTarget "SwiftyRestKitTests" */;
 			buildPhases = (
 				0AA70D5421BF02130093F3A0 /* Sources */,
 				0AA70D5521BF02130093F3A0 /* Frameworks */,
@@ -227,9 +227,9 @@
 			dependencies = (
 				0AA70D5B21BF02130093F3A0 /* PBXTargetDependency */,
 			);
-			name = RestKitTests;
+			name = SwiftyRestKitTests;
 			productName = RestKitTests;
-			productReference = 0AA70D5821BF02130093F3A0 /* RestKitTests.xctest */;
+			productReference = 0AA70D5821BF02130093F3A0 /* SwiftyRestKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -251,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0AA70D4921BF02130093F3A0 /* Build configuration list for PBXProject "RestKit" */;
+			buildConfigurationList = 0AA70D4921BF02130093F3A0 /* Build configuration list for PBXProject "SwiftyRestKit" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -263,8 +263,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0AA70D4E21BF02130093F3A0 /* RestKit */,
-				0AA70D5721BF02130093F3A0 /* RestKitTests */,
+				0AA70D4E21BF02130093F3A0 /* SwiftyRestKit */,
+				0AA70D5721BF02130093F3A0 /* SwiftyRestKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -323,7 +323,7 @@
 /* Begin PBXTargetDependency section */
 		0AA70D5B21BF02130093F3A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0AA70D4E21BF02130093F3A0 /* RestKit */;
+			target = 0AA70D4E21BF02130093F3A0 /* SwiftyRestKit */;
 			targetProxy = 0AA70D5A21BF02130093F3A0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -464,7 +464,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "";
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "";
-				INFOPLIST_FILE = RestKit/Info.plist;
+				INFOPLIST_FILE = SwiftyRestKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -472,7 +472,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rodolforoca.RestKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodolforoca.SwiftyRestKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -493,7 +493,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = "";
-				INFOPLIST_FILE = RestKit/Info.plist;
+				INFOPLIST_FILE = SwiftyRestKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -501,7 +501,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.rodolforoca.RestKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rodolforoca.SwiftyRestKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.2;
@@ -550,7 +550,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AA70D4921BF02130093F3A0 /* Build configuration list for PBXProject "RestKit" */ = {
+		0AA70D4921BF02130093F3A0 /* Build configuration list for PBXProject "SwiftyRestKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AA70D6121BF02130093F3A0 /* Debug */,
@@ -559,7 +559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AA70D6321BF02130093F3A0 /* Build configuration list for PBXNativeTarget "RestKit" */ = {
+		0AA70D6321BF02130093F3A0 /* Build configuration list for PBXNativeTarget "SwiftyRestKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AA70D6421BF02130093F3A0 /* Debug */,
@@ -568,7 +568,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AA70D6621BF02130093F3A0 /* Build configuration list for PBXNativeTarget "RestKitTests" */ = {
+		0AA70D6621BF02130093F3A0 /* Build configuration list for PBXNativeTarget "SwiftyRestKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AA70D6721BF02130093F3A0 /* Debug */,
