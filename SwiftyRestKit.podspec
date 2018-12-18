@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.summary      = "An easy, organized, protocol-oriented way to do REST requests on iOS."
   s.requires_arc = true
 
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
 
   s.description  = "SwiftyRestKit is a simple, lightweight library, built using URLSession, to help make REST requests on iOS easier to deal with and more testable."
 
